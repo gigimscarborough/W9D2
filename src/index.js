@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     ctx.fillStyle = "black"
     ctx.fillRect(20, 15, 500, 500);
+    // console.log(newObj);
 
     const newObj = new MovingObject({
         pos: [30, 30],
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         radius: 5,
         color: "#00FF00"
     })
-    newObj.draw(ctx)
-
+    newObj.draw(ctx);
+    debugger;
+    newObj.move(ctx);
 })
